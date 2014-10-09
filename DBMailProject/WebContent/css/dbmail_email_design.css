@@ -1,0 +1,25 @@
+.email_creator{
+	padding: 40px;
+}
+.email_form{
+	
+}
+.email_input{
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	border: none;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	margin: 3px;
+}
+.email_textarea{
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	border: none;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	margin: 3px;
+	height: 200px;
+}

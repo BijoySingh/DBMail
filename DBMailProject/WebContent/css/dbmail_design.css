@@ -1,0 +1,19 @@
+*{
+	font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	padding: 0px;
+	margin:0px;
+}
+body{
+	padding-top: 50px;
+	background-color: #ffffff;
+}
+.no_bullet_list{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.unformatted_a_href{
+	color:black; 
+	text-decoration: none;
+}
+
