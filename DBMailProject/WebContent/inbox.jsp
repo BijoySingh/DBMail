@@ -9,6 +9,51 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/writer.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#show_inbox').click(function(){
+				get_inbox();
+			});
+			function create_panel(source,id,subject,interval,email_read){
+				if(email_read == "true")
+					email_read = "email_read";
+				else
+					email_read = "";
+				return '<a class="email_link" href="thread.jsp?id=' + id +'">'+
+				'<table class="email_table '+ email_read+'">'+
+					'<tr class="email_item">'+
+						'<td class="email_source">' + source + '</td>'+
+						'<td class="email_time">' + interval + '</td>'+
+					'</tr><tr class="email_item">'+
+						'<td class="email_subject" colspan="3">'+ subject +'</td>'+
+					'</tr>'+
+				'</table>'+
+				'</a>';
+			}
+			function get_inbox(){
+				$.ajax({
+					  url: 'InboxHandler',
+					  type: 'POST',
+					  dataType: 'json',
+					  success: function(data) {
+						//called when successful
+						$('#data').html(
+								create_panel(
+								data["inbox"][0]["email_source"],
+								data["inbox"][0]["thread_id"],
+								data["inbox"][0]["email_subject"],
+								data["inbox"][0]["email_interval"],
+								data["inbox"][0]["email_read"]
+								));
+					  },
+					  error: function(e) {
+						//called when there is an error
+						//console.log(e.message);
+					  }
+				});
+			}
+		});	
+	</script>
 </head>
 <body style="padding-top: 130px; padding-bottom: 30px;">
 <div class="navbar navbar_wide">
@@ -24,13 +69,13 @@
 </tr>
 </table>
 </li>
-<li><a href="inbox.jsp">
+<li id="show_inbox">
 <table class="navigation_table navigation_table_active">
 <tr>
 	<td class="nav_tr"><img src="images/icons/folder.png" style="height: 20px;"></td>
 	<td class="nav_tr">Inbox</td>
 </tr>
-</table></a>
+</table>
 </li>
 <li><a href="outbox.jsp">
 <table class="navigation_table">
@@ -52,7 +97,7 @@
 </div>
 </div>
 
-<div class="email_list">
+<div class="email_list" id="data">
 	<a class="email_link" href="thread.jsp">
 	<table class="email_table">
 		<tr class="email_item">
