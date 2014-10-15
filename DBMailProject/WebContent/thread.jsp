@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/dbmail_navbar_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_login_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_thread_design.css">
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/writer.js"></script>
