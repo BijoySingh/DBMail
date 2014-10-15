@@ -2,29 +2,27 @@
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	padding: 10px;
+	padding: 0px;
 	right: 0px;
 	background-color: #00796b;
+	background: linear-gradient(#01579b,#0288d1);
+	/*background: linear-gradient(#004d40,#00695c,#00796b);*/
+}
+.dbmail_logo{
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 .sub_navbar{
-	position: fixed;
+	/*position: fixed;*/
 	left: 0px;
-	height: 50px;
+	/*height: 50px;*/
 	right: 0px;
+	padding: 0px;
 	/*padding: 0px 43px;*/
 	background-color: #e9eaed;
-}
-.navbar_narrow{	
-	height: 50px;
-}
-.navbar_wide{	
-	height: 50px;
-}
-.sub_navbar_narrow{	
-	top: 50px;
-}
-.sub_navbar_wide{	
-	top: 70px;
+	border-bottom: 1px solid rgb(240,240,240);
 }
 .bottom_navbar{
 	left: 0px;
@@ -80,22 +78,31 @@
 }
 
 .navigation_menu{
+	padding: 0px!important;
+	font-size: 0px;
 }
 .navigation_menu li{
 	display: inline-block;
-	padding: 0px 20px;	
+	font-size: 15px;
+	/*padding: 0px 20px;*/
+	padding: 0px!important;
+	margin: 0px!important;
+}
+.navigation_menu li a{
+	padding: 0px!important;
 }
 .navigation_menu li:hover{
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(252,255,253,0.4);
 }
 .navigation_table{
-	margin-top: -10px;
+	padding: 0px 10px;
+	margin-top: 0px;
+	margin-bottom: 0px!important;
 }
 .navigation_table tr td{
-	padding: 10px 10px;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 .navigation_table_active{
-	border-bottom: 4px solid #bbbbbb;
+	/*border-bottom: 4px solid #bbbbbb;*/
+	background-color: rgba(250,250,250,1);
 }

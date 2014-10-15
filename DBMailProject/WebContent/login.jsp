@@ -4,10 +4,11 @@
 	<link rel="stylesheet" type="text/css" href="css/dbmail_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_navbar_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_login_design.css">
+
 </head>
-<body style="padding-top: 60px; padding-bottom: 30px;">
+<body style="padding-top: 80px; padding-bottom: 30px;">
 <div class="navbar navbar_wide">
-<img src="images/dbmail_logo.png" style="height: 50px;">
+<img src="images/dbmail_logo.png" class="dbmail_logo">
 </div>
 <!-- <div class="sub_navbar sub_navbar_wide">
 Sign In

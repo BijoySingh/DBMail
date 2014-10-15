@@ -5,18 +5,20 @@
 	<link rel="stylesheet" type="text/css" href="css/dbmail_navbar_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_login_design.css">
 	<link rel="stylesheet" type="text/css" href="css/dbmail_email_design.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/writer.js"></script>
+
 </head>
-<body style="padding-top: 120px; padding-bottom: 30px;">
+<body style="padding-top: 160px; padding-bottom: 30px;">
 <div class="navbar navbar_wide">
-<img src="images/dbmail_logo.png" style="height: 50px;">
-</div>
+<img src="images/dbmail_logo.png" class="dbmail_logo">
 <div class="sub_navbar sub_navbar_wide">
 <ul class="navigation_menu">
 <li><a href="write_new.jsp">
 <table class="navigation_table navigation_table_active">
 <tr>
 	<td><img src="images/icons/compose.png" style="height: 20px;"></td>
-	<td>Write New</td>
+	<td>Compose</td>
 </tr>
 </table></a>
 </li>
@@ -47,6 +49,8 @@
 </ul>
 </div>
 
+</div>
+
 <div class="email_creator">
 	<form class="email_form">
 		<input class="email_input" type="text" placeholder="Send To">
@@ -56,6 +60,7 @@
 		<input class="submit_button" type="submit" value="Send">
 	</form>
 </div>
+
 <div class="credits_navbar">
 DBMail &copy; 2014
 </div>
