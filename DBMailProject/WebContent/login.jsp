@@ -14,13 +14,14 @@
 Sign In
 </div> -->
 <div class="login_panel">
-<form class="login_form">
+<form class="login_form" method = "POST" action="SignInHandler">
 <div class="login_title">Sign In</div>
-<input class="login_input" type="text" placeholder="Username">
-<input class="login_input" type="password" placeholder="Password">
+<input class="login_input" name="Username" type="text" placeholder="Username">
+<input class="login_input" name="Password" type="password" placeholder="Password">
 <input class="submit_button" type="submit" value="Sign In">
-<a class="unformatted_a_href"><button class="submit_button">Sign Up</button></a>
 </form>
+<a class="unformatted_a_href" href="signup.jsp"><button class="submit_button">Sign Up</button></a>
+
 </div>
 
 <div class="bottom_navbar">

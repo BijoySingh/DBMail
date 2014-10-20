@@ -25,7 +25,8 @@ CREATE TABLE Sent(
 CREATE TABLE Received(
 	thread_id NUMERIC(15,0),
 	receiver_id NUMERIC(15,0),
-	seen BOOLEAN
+	seen BOOLEAN,
+	visible BOOLEAN
 );
 
 CREATE TABLE ViewType(

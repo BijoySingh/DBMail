@@ -12,8 +12,28 @@
 		$('#minimise_email_creator').click(function(){
 			$('#email_creator_content').toggle(300);
 		}); 
+		
 		$('#send_email').click(function(){
-			// alert("you sure you douche!");
 			$('#email_creator').hide(500);
+			var data = 
+			'{"subject":"' + encodeURI( $("#email_subject").val() ) + '",'+
+			 '"email" : "' + encodeURI( $("#email_text").val() ) + '",'+
+			 '"cc":"' + encodeURI( $("#email_cc").val() ) + '",'+
+			 '"bcc":"' + encodeURI( $("#email_bcc").val() ) + '"}';
+			 send_email(data);
 		});
+		function send_email(data){
+			$.ajax({
+			    url: 'WriteHandler',
+			    type: "POST",
+			    data: data,
+			    contentType: "application/json",
+			    success: function(data) {
+					alert(data);
+				},
+				error: function(e) {
+				}
+			});
+		}
+		
 	});

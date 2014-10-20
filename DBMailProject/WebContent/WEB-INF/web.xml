@@ -39,4 +39,27 @@
     <servlet-name>InboxHandler</servlet-name>
     <url-pattern>/InboxHandler</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SignInHandler</display-name>
+    <servlet-name>SignInHandler</servlet-name>
+    <servlet-class>DBMailPackage.SignInHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignInHandler</servlet-name>
+    <url-pattern>/SignInHandler</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>DBMailPackage.ContextListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>SignUpHandler</display-name>
+    <servlet-name>SignUpHandler</servlet-name>
+    <servlet-class>DBMailPackage.SignUpHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUpHandler</servlet-name>
+    <url-pattern>/SignUpHandler</url-pattern>
+  </servlet-mapping>
 </web-app>

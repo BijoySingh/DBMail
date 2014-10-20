@@ -14,6 +14,16 @@
 	margin-bottom: 20px;
 	margin-left: 20px;
 }
+.sub_navbar_bottom{
+	position: fixed;
+	bottom:0px;	
+	box-shadow: 0px 1px 20px rgba(0,0,0,0.6);
+	left: 0px;
+	right: 0px;
+	padding: 0px;
+	background-color: #e9eaed;
+	border-bottom: 1px solid rgb(240,240,240);
+}
 .sub_navbar{
 	/*position: fixed;*/
 	left: 0px;
